@@ -1,0 +1,14 @@
+
+<div class="container">
+  <h2 style="font-size:25px">Select to proceed the quiz </h2>
+  <div class="col-md-3" *ngFor="let item of langItem">
+      <div class="panel panel-primary">
+      <div class="panel-heading">{{item.title}}</div>
+      <div class="panel-body">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png" style="width:50px" />
+            {{item.desc}}
+          <input routerLink="../qstart"  type="button" value="Start" class="btn btn-default" />
+        </div>
+    </div>
+  </div>
+</div>
